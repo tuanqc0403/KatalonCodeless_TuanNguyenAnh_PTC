@@ -24,26 +24,27 @@ String txtPassword='ThisIsNotAPassword'
 String txtFacility='Tokyo CURA Healthcare Center'
 String txtVisitDate='10/10/2023'
 String txtComment='ThisIsComment'
-String txtHealthcareProgram='Medicare'
+String txtHealthcareProgram='Medicaid'
+String idHealthCareProgram='radio_program_medicaid'
 
-//Landing Page
+'Landing Page'
 CustomKeywords.'LandingPages.clickAppointmentButton'()
-CustomKeywords.'LoginPages.inputLoginInformation'(txtUsername, txtPassword)
 
-//Login Page
+'Login Page'
+CustomKeywords.'LoginPages.inputLoginInformation'(txtUsername, txtPassword)
 CustomKeywords.'LoginPages.isAtLoginPages'()
 CustomKeywords.'LoginPages.clickLoginButton'()
 
-//Make Appointment Page
+'Make Appointment Page'
 CustomKeywords.'MakeAppointment.isAtMakeAppointmentPages'()
 CustomKeywords.'MakeAppointment.selectFacility'(txtFacility)
 CustomKeywords.'MakeAppointment.clickCheckbox'();
-CustomKeywords.'MakeAppointment.chooseHealthcareProgram'()
+CustomKeywords.'MakeAppointment.chooseHealthcareProgram'(idHealthCareProgram)
 CustomKeywords.'MakeAppointment.inputVisitDate'(txtVisitDate)
 CustomKeywords.'MakeAppointment.inputComment'(txtComment)
 CustomKeywords.'MakeAppointment.clickBookAppointment'()
 
-//Confirm Appointment Page
+'Confirm Appointment Page'
 CustomKeywords.'AppointmentConfirm.IsAtAppointmentConfirmPages'()
 WebUI.verifyEqual(CustomKeywords.'AppointmentConfirm.getFacilityText'(),txtFacility )
 WebUI.verifyEqual(CustomKeywords.'AppointmentConfirm.getCommentText'(),txtComment )
@@ -52,7 +53,7 @@ WebUI.verifyEqual(CustomKeywords.'AppointmentConfirm.getHealthcareProgram'(),txt
 WebUI.verifyEqual(CustomKeywords.'AppointmentConfirm.getReadmissionText'(),'Yes' )
 CustomKeywords.'AppointmentConfirm.clickHomepageButton'()
 
-//Landing pages
+'Landing pages'
 CustomKeywords.'LandingPages.isAtLandingPages'()
 
 WebUI.closeBrowser();

@@ -36,8 +36,8 @@ public class MakeAppointment {
 	}
 
 	@Keyword
-	def chooseHealthcareProgram() {
-		WebUI.click(findTestObject('Object Repository/MakeAppointmentPages/rdoHealthcare'));
+	def chooseHealthcareProgram(String healthCareProgramID) {
+		WebUI.click(findTestObject('Object Repository/MakeAppointmentPages/rdoHealthcare',['id' : healthCareProgramID]));
 	}
 
 	@Keyword

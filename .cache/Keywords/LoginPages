@@ -1,13 +1,12 @@
 {
-  "keywordFileContentHash": "B1F5352F2FCAC7F8F86F1A134576E784",
+  "keywordFileContentHash": "34539AA023EE91E71D6A54A8F8DA8537",
   "keywordClasses": [
     {
       "name": "LoginPages",
       "keywordMethods": [
         {
           "name": "isAtLoginPages",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "inputUserNameText",
@@ -25,8 +24,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "inputPasswordText",
@@ -44,8 +42,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "inputLoginInformation",
@@ -76,16 +73,18 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "clickLoginButton",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
+        },
+        {
+          "name": "isErrorMessageDisplay",
+          "parameters": []
         }
       ]
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }

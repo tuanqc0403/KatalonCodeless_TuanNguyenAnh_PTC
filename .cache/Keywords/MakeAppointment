@@ -1,13 +1,12 @@
 {
-  "keywordFileContentHash": "3BF095A417E84CCD3A60888C055F26EE",
+  "keywordFileContentHash": "6EC5ABF3D0CCFE820F271B62EF09D29E",
   "keywordClasses": [
     {
       "name": "MakeAppointment",
       "keywordMethods": [
         {
           "name": "isAtMakeAppointmentPages",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "selectFacility",
@@ -25,18 +24,29 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "clickCheckbox",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "chooseHealthcareProgram",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": [
+            {
+              "name": "healthCareProgramID",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ]
         },
         {
           "name": "inputVisitDate",
@@ -54,8 +64,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "inputComment",
@@ -73,16 +82,14 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "clickBookAppointment",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         }
       ]
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }
