@@ -12,14 +12,14 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>e1b90a22-8e8a-437b-9951-98b9df5f3425</testSuiteGuid>
    <testCaseLink>
-      <guid>86971235-84a3-4a16-b7b8-00ffddf631d1</guid>
+      <guid>12bc2069-0876-4fa5-b757-846517dd8265</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Login Testcase/LoginPassed</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>4e2c413b-b9f3-4e3e-b4c1-7b929d12c77b</guid>
+      <guid>0fde9afc-ab6c-4fb5-bd89-0bea2ec5f8d9</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Login Testcase/LoginFailed</testCaseId>

@@ -45,10 +45,16 @@ public class LoginPages {
 	def clickLoginButton() {
 		WebUI.click(findTestObject('Object Repository/LoginPages/btnLogin'));
 	}
-	
+
 	@Keyword
 	def isErrorMessageDisplay() {
-		WebUI.waitForElementVisible(findTestObject('Object Repository/LoginPages/txtErrorMessage'), 5);
+		return WebUI.verifyElementVisible(findTestObject('Object Repository/LoginPages/txtErrorMessage'));
+	}
+
+	@Keyword
+	def removeData( ) {
+		inputUserNameText('');
+		inputPasswordText('');
 	}
 }
 

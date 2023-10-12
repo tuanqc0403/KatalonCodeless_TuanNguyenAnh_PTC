@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "34539AA023EE91E71D6A54A8F8DA8537",
+  "keywordFileContentHash": "9356469F3B9D9EE661E751E9A9FEEAD8",
   "keywordClasses": [
     {
       "name": "LoginPages",
@@ -86,6 +86,11 @@
         },
         {
           "name": "isErrorMessageDisplay",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "removeData",
           "parameters": [],
           "javadoc": ""
         }

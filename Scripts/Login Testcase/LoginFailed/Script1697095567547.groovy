@@ -10,23 +10,28 @@ import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
-import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import internal.GlobalVariable as GlobalVariable
+import internal.GlobalVariable
+
 import org.openqa.selenium.Keys as Keys
+import org.apache.commons.io.FileUtils
 
 WebUI.openBrowser('https://katalon-demo-cura.herokuapp.com/')
 
-String txtUsername='John Doe123'
-String txtPassword='ThisIsNotAPassword123'
+	TestData loginData = findTestData("Login Data")
 
-CustomKeywords.'LandingPages.isAtLandingPages'()
-CustomKeywords.'LandingPages.clickAppointmentButton'()
-CustomKeywords.'LoginPages.isAtLoginPages'()
-CustomKeywords.'LoginPages.inputLoginInformation'(txtUsername, txtPassword)
-CustomKeywords.'LoginPages.clickLoginButton'()
+	CustomKeywords.'LandingPages.clickAppointmentButton'()
+
+	for(int i=1;i<=3;i++) {
+		CustomKeywords.'LoginPages.inputLoginInformation'(loginData.getObjectValue('Username', i).toString(), loginData.getObjectValue('Password', i).toString());
+		CustomKeywords.'LoginPages.clickLoginButton'()
+		CustomKeywords.'LoginPages.isErrorMessageDisplay'()
+		CustomKeywords.'LoginPages.removeData'()
+	}
 
 
 WebUI.closeBrowser()
