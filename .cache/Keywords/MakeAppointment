@@ -1,0 +1,88 @@
+{
+  "keywordFileContentHash": "3BF095A417E84CCD3A60888C055F26EE",
+  "keywordClasses": [
+    {
+      "name": "MakeAppointment",
+      "keywordMethods": [
+        {
+          "name": "isAtMakeAppointmentPages",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "selectFacility",
+          "parameters": [
+            {
+              "name": "txtFacility",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "clickCheckbox",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "chooseHealthcareProgram",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "inputVisitDate",
+          "parameters": [
+            {
+              "name": "txtVisitDate",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "inputComment",
+          "parameters": [
+            {
+              "name": "txtComment",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "clickBookAppointment",
+          "parameters": [],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

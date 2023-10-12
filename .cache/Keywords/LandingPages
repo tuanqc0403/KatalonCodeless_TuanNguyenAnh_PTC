@@ -1,0 +1,21 @@
+{
+  "keywordFileContentHash": "DA2EFB1638BFBC31785D8737013D36E7",
+  "keywordClasses": [
+    {
+      "name": "LandingPages",
+      "keywordMethods": [
+        {
+          "name": "isAtLandingPages",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "clickAppointmentButton",
+          "parameters": [],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

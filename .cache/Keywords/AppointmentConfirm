@@ -1,0 +1,46 @@
+{
+  "keywordFileContentHash": "1C189F498D1E2E75F0F4E066E148FAC4",
+  "keywordClasses": [
+    {
+      "name": "AppointmentConfirm",
+      "keywordMethods": [
+        {
+          "name": "IsAtAppointmentConfirmPages",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "getFacilityText",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "getReadmissionText",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "getHealthcareProgram",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "getVisitDate",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "getCommentText",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "clickHomepageButton",
+          "parameters": [],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}
