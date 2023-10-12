@@ -1,12 +1,13 @@
 {
-  "keywordFileContentHash": "6EC5ABF3D0CCFE820F271B62EF09D29E",
+  "keywordFileContentHash": "83F6FB8DC1B264357E942A3410764BD8",
   "keywordClasses": [
     {
       "name": "MakeAppointment",
       "keywordMethods": [
         {
           "name": "isAtMakeAppointmentPages",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "selectFacility",
@@ -24,11 +25,13 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "clickCheckbox",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "chooseHealthcareProgram",
@@ -37,8 +40,8 @@
               "name": "healthCareProgramID",
               "initialExpression": "",
               "type": {
-                "fullClassName": "java.lang.String",
-                "unresolvedClassName": "String",
+                "fullClassName": "MakeAppointment.HealthCareProgramEnum",
+                "unresolvedClassName": "HealthCareProgramEnum",
                 "isArray": false,
                 "isGnericsPlaceHolder": false,
                 "hasImmutableClassName": false,
@@ -46,7 +49,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "inputVisitDate",
@@ -64,7 +68,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "inputComment",
@@ -82,14 +87,20 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "clickBookAppointment",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         }
       ]
+    },
+    {
+      "name": "MakeAppointment$HealthCareProgramEnum",
+      "keywordMethods": []
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }

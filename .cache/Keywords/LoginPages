@@ -6,7 +6,8 @@
       "keywordMethods": [
         {
           "name": "isAtLoginPages",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "inputUserNameText",
@@ -24,7 +25,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "inputPasswordText",
@@ -42,7 +44,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "inputLoginInformation",
@@ -73,18 +76,21 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "clickLoginButton",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "isErrorMessageDisplay",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         }
       ]
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }

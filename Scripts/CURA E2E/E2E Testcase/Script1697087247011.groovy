@@ -14,6 +14,8 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+
+import MakeAppointment.HealthCareProgramEnum
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
@@ -25,7 +27,6 @@ String txtFacility='Tokyo CURA Healthcare Center'
 String txtVisitDate='10/10/2023'
 String txtComment='ThisIsComment'
 String txtHealthcareProgram='Medicaid'
-String idHealthCareProgram='radio_program_medicaid'
 
 'Landing Page'
 CustomKeywords.'LandingPages.clickAppointmentButton'()
@@ -39,7 +40,7 @@ CustomKeywords.'LoginPages.clickLoginButton'()
 CustomKeywords.'MakeAppointment.isAtMakeAppointmentPages'()
 CustomKeywords.'MakeAppointment.selectFacility'(txtFacility)
 CustomKeywords.'MakeAppointment.clickCheckbox'();
-CustomKeywords.'MakeAppointment.chooseHealthcareProgram'(idHealthCareProgram)
+CustomKeywords.'MakeAppointment.chooseHealthcareProgram'(HealthCareProgramEnum.radio_program_medicaid);
 CustomKeywords.'MakeAppointment.inputVisitDate'(txtVisitDate)
 CustomKeywords.'MakeAppointment.inputComment'(txtComment)
 CustomKeywords.'MakeAppointment.clickBookAppointment'()

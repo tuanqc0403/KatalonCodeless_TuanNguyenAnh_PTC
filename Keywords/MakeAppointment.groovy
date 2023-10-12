@@ -20,6 +20,10 @@ import internal.GlobalVariable
 
 public class MakeAppointment {
 
+	enum HealthCareProgramEnum {
+		radio_program_medicare, radio_program_medicaid, radio_program_none
+	}
+
 	@Keyword
 	def isAtMakeAppointmentPages() {
 		return WebUI.waitForElementVisible(findTestObject('Object Repository/MakeAppointmentPages/btnBookAppointment'), 5);
@@ -36,8 +40,8 @@ public class MakeAppointment {
 	}
 
 	@Keyword
-	def chooseHealthcareProgram(String healthCareProgramID) {
-		WebUI.click(findTestObject('Object Repository/MakeAppointmentPages/rdoHealthcare',['id' : healthCareProgramID]));
+	def chooseHealthcareProgram(HealthCareProgramEnum healthCareProgramID) {
+		WebUI.click(findTestObject('Object Repository/MakeAppointmentPages/rdoHealthcare',['id' : healthCareProgramID.toString()]));
 	}
 
 	@Keyword
